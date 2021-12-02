@@ -55,10 +55,10 @@ Función find del BST: Debido a su recursividad se tiene O*log(n) para el mejor 
 ## SICT0303B: Implementa acciones científicas 
 ### Implementa mecanismos para consultar información de las estructuras correctos y útiles dentro de un programa.
 
-Se implementara en proximos avances
+Se implementó EN INTEGRAL B 
 
 ### Implementa mecanismos de lectura de archivos correctos y útiles dentro de un programa. Usar de manera
-Se implementara en proximos avances
+Se implementÓ EN INTEGRAL B 
 
 ### Implementa mecanismos de escritura de archivos correctos y útiles dentro de un programa. Usar de manera
-Se implementara en proximos avances
+Se implementó EN INTEGRAL B 
