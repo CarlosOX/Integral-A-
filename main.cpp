@@ -15,8 +15,8 @@ using namespace std;
 
 int main(){
 	
-		cout<<"PROGRAMA DE ORDENAMIENTO DE CALORIAS";
-		cout<<"Aqui se encuentra una lista de alimentos con sus respectivas calorias por cada 100 gramos";
+		cout<<"PROGRAMA DE ORDENAMIENTO DE CALORIAS\n";
+		cout<<"Aqui se encuentra una lista de alimentos con sus respectivas calorias por cada 100 gramos\n";
 		
 		string matriz[20][2]={{"Manzana","40"},{"Leche de cabra","72"},{"Queso crema","245"},{"Mousse","177"},{"Yogur natural","62"},{"Leche entera","68"},{"Flan de vainilla","102"},{"Jamon","380"},{"Chorizo","468"},{"Pato","200"},{"Pollo","134"},{"Salami","325"},{"Tripas","100"},{"Salmon","172"},{"Trucha","94"},{"Miel","300"},{"Avena","367"},{"Arroz blanco","354"},{"Clara","48"},{"Huevo entero","162"}};
 		cout<<endl;
@@ -41,19 +41,19 @@ int main(){
 		cout<<endl;
 		cout<<endl;
 		
-		cout<<"A continuacion se presenta la estructura lineal para esta base de datos la cual es una lista doblemente ligada"<<endl;
+		cout<<"\nA continuacion se presenta la estructura lineal para esta base de datos la cual es una lista doblemente ligada\n"<<endl;
 		
 		DList<int> alimentoslista;
 		for(int i=0;i<v.size();i++){
 			alimentoslista.insertion(v[i]);	
 		}	
 		
-		cout<<"LISTA ORDENADA CON ALIMENTOS DE MENOR A MAYOR CALORIAS"<<endl;
+		cout<<"\nLISTA ORDENADA CON ALIMENTOS DE MENOR A MAYOR CALORIAS\n"<<endl;
 		cout<<alimentoslista.toStringForward();
 		cout<<endl;
-		cout<<"LISTA ORDENADA CON ALIMENTOS DE MAYOR A MENOR CALORIAS"<<endl;
+		cout<<"\nLISTA ORDENADA CON ALIMENTOS DE MAYOR A MENOR CALORIAS\n"<<endl;
 		cout<<endl;
-		cout<<alimentoslista.toStringBackward();
+		cout<<"\n"<<alimentoslista.toStringBackward();
 		cout<<endl;
 		cout<<endl;
 		cout<<endl;
@@ -65,7 +65,7 @@ int main(){
 			alimentosarbol.add(v[i]);
 		}
 		cout<<endl;
-		cout<<"BINARY SEARCH TREE CON LOS ALIMENTOS "<<endl;
+		cout<<"BINARY SEARCH TREE CON LOS ALIMENTOS\n "<<endl;
 		cout<<alimentosarbol.inorder()<<endl;
 		cout<<endl;
 		bool t=true;
@@ -75,7 +75,7 @@ int main(){
 		cout<<endl;
 		while(t==true){
 		
-			cout<<"1. AGREGAR EN LISTA"<<endl;
+			cout<<"\n1. AGREGAR EN LISTA"<<endl;
 		   	cout<<"2. BUSCAR EN LISTA"<<endl;
 		   	cout<<"3. ELIMINAR EN LISTA"<<endl;
 		   	cout<<"4. AGREGAR EN ARBOL"<<endl;
@@ -85,26 +85,26 @@ int main(){
 		   	cin>>opcion;
 		   
 		  	 if(opcion==1){
-		   		cout<<"Ingrese el valor que desea agregar: "<<endl;
+		   		cout<<"Ingrese las calorias que desea agregar: "<<endl;
 		   		cin>>val;
 		   		alimentoslista.insertion(val);
 		   		cout<<alimentoslista.toStringForward()<<endl;
 		   	}
 		   	else if(opcion==2){
-		   		cout<<"Ingrese el valor a buscar: "<<endl;
+		   		cout<<"Ingrese las calorias a buscar: "<<endl;
 		   		cin>>val;
-		   		cout<<"POSICION DEL ELEMENTO BUSCADO: "<<alimentoslista.search(val)<<endl;
+		   		cout<<"POSICION DEL ELEMENTO BUSCADO(si no se encuentra el valor se mostrará el numero -1): "<<alimentoslista.search(val)<<endl;
 		   		cout<<alimentoslista.toStringForward()<<endl;
 		   	}
 		   	else if(opcion==3){
-		   		cout<<"Ingrese el iterador del valor que desea eliminar: "<<endl;
+		   		cout<<"Ingrese el iterador de las calorias que desea eliminar: "<<endl;
 		   		cin>>val;
 		   		alimentoslista.deleteAt(val);
 		   		cout<<alimentoslista.toStringForward()<<endl;
 		   		
 		   	}
 		   	else if(opcion==4){
-		   		cout<<"Ingrese el valor que desea agregar: "<<endl;
+		   		cout<<"Ingrese las calorias que desea agregar: "<<endl;
 		   		cin>>val;
 		   		alimentosarbol.add(val);
 		   		cout<<alimentosarbol.inorder()<<endl;
@@ -112,7 +112,7 @@ int main(){
 		   	}
 		   	
 		   	else if(opcion==5){
-		   		cout<<"Ingrese el valor que desea buscar: "<<endl;
+		   		cout<<"Ingrese las calorias que desea buscar: "<<endl;
 		   		cin>>val;
 		   		cout<<"ELEMENTO BUSCADO: 1=true, 0=false   Valor: "<<alimentosarbol.find(val)<<endl;
 		   		
@@ -130,7 +130,7 @@ int main(){
 		   		cout<<"Ingreso una opcion incorrecta"<<endl;
 		   	}
 		   
-		 	cout<<"Desea continuar modificando la lista?"<<endl;
+		 	cout<<"Desea continuar modificando las estructuras? (favor de poner si o no en minusculas)"<<endl;
 		   	cin>>respuesta;
 		   	if(respuesta=="no"){
 		   		t=false;
@@ -140,3 +140,4 @@ int main(){
 	
 	return 0;
 }
+
